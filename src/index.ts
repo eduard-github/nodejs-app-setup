@@ -1,8 +1,10 @@
 import http from 'http';
 import app from './app';
+import config from './config';
 
 const hostname = '127.0.0.1';
-const port = 3000;
+const port = +config.port ?? 3000;
+console.log('Port: ', process.env);
 
 const server = http.createServer(app);
 
