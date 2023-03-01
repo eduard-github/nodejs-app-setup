@@ -6,6 +6,15 @@ const port = 3000;
 
 const server = http.createServer(app);
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+const bootstrap = (): void => {
+  try {
+    console.log('DB Connected');
+  } catch (error) {
+    console.log('DB Connect error');
+  }
+  server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+  });
+};
+
+bootstrap();
