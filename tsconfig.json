@@ -5,14 +5,15 @@
     "rootDir": "./src",
     "baseUrl": ".",
     "paths": {
-      "@config/*": ["./src/config/*"],
+      "@configs/*": ["./src/configs/*"],
       "@models/*": ["./src/models/*"],
       "@middlewares/*": ["./src/middlewares/*"],
       "@routes/*": ["./src/routes/*"],
       "@controllers/*": ["./src/controllers/*"],
       "@services/*": ["./src/services/*"],
       "@utils/*": ["./src/utils/*"],
-      "@types/*": ["./src/types/*"]
+      "@types/*": ["./src/types/*"],
+      "@tests/*": ["./src/tests/*"]
     },
     "typeRoots": ["./node_modules/@types", "./src/@types"],
     "allowJs": true,
